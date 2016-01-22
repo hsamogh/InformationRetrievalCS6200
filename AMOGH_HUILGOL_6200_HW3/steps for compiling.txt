@@ -1,0 +1,62 @@
+INFORMATION RETRIEVAL -ASSIGNMENT 3
+******************************************************************************************
+
+This assignment is coded using Python version 3.4.2
+
+There are two programs for this assignment
+a) indexer.py
+b) bm25.py
+
+In order to successfully run this code ,we need following libraries
+1) sys
+2) math
+3) operator
+
+
+All these modules are in-built into python 
+
+
+********************************************************************************************
+HOW TO  RUN THE PROGRAM
+------------------------
+
+a) running indexer.py file
+---------------------------
+
+To run this program , the user has to provide 2 parameters through command line
+    
+    1) corpus-file : A file which contains document-ids and stem-words for that document
+    2) output-file : The file where the inverted index will be stored
+
+This module needs to be called using following format
+
+python indexer.py corpus-file output-file
+
+
+
+b) running bm25.py file
+-------------------------
+
+In order to run this program , the user has  to supply 3 parameters through command-line
+    
+   1) index-file : the file which contains inverted index information
+       	The inverted index file must have following format :
+
+       	# stem-word
+       	document-id~count
+       	.
+       	.
+       	.
+       	.
+       	# stem-word
+       	document-id~count
+
+   2) queries file : A file containing queries for which documents are to be ranked
+
+   3) max-documents : maximum number of documents to be retrieved for each query
+
+The module can be called with following format
+
+python bm25.py index-file queries-file max-documents
+
+

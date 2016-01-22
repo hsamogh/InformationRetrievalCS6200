@@ -1,0 +1,80 @@
+INFORMATION RETRIEVAL -ASSIGNMENT 3
+******************************************************************************************
+
+This assignment is coded using Python version 3.4.2
+
+There are two programs for this assignment
+a) indexer.py
+b) bm25.py
+
+In order to successfully run this code ,we need following libraries
+
+1) math
+
+
+All these modules are in-built into python 
+
+
+********************************************************************************************
+HOW TO  RUN THE PROGRAM
+------------------------
+
+The results from HW3 are present in the file "results.txt" .
+
+This program can be run using following command :
+
+python hw5.py
+
+
+
+The output of the program is as follows :
+
+
+This module calculates precision , recall , precision@20 , MAP , NDCG for BM25 scores of HW3
+
+Query_id : 12 Precision@20 : 0.15
+Query_id : 13 Precision@20 : 0.25
+Query_id : 19 Precision@20 : 0.45
+Mean Average Precision is : 0.4146752713701866
+
+*******************************************************************************************
+
+In the above output 
+query-id 12 represents the query : portable operating systems
+query-id 13 represents the query : code optimization for space efficiency
+query-id 19 represents the query : parallel algorithms 
+
+ 
+*********************************************************************************************
+
+The assignment has following files
+
+1) cacm.txt : this file consists of relevance information
+
+2) mean_average_precision.txt : This file consists of MAP value for HW3
+
+3) precision_at_20_values.txt : This file consists of P@20 values for all the queries
+
+4) results_for_query_12.txt : This file consists of rank , document_id , BM25-score , relevance-level , precision , recall , MAP , NDCG
+                              for query_id = 12 (i.e portable operating systems)
+
+5) results_for_query_13.txt : This file consists of rank , document_id , BM25-score , relevance-level , precision , recall , MAP , NDCG
+                              for query_id = 13 (i.e code optimization for space efficiency )
+
+6) results_for_query_19.txt : This file consists of rank , document_id , BM25-score , relevance-level , precision , recall , MAP , NDCG
+                              for query_id = 19 (i.e parallel algorithms )
+
+7) HW5.py : Contains the source code to calculate 
+            1- Precision
+            2- Recall
+            3- P@K, where K = 20
+            4- Normalized Discounted Cumulative Gain (NDCG)
+            5- Mean Average Precision (MAP)
+
+8)results.txt : Result of HW3 assignment containing BM25 scores for the top 100 documents for queries
+
+9) tables_for_queries.xls : Contains the rank , document_id , BM25-score , relevance-level , precision , recall , MAP , NDCG values for each query
+                            The results for each query is stored in a seperate tab
+
+*******************************************************************************************
+

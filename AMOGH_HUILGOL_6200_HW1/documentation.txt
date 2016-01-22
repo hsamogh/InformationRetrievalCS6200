@@ -1,0 +1,60 @@
+INFORMATION RETRIEVAL -ASSIGNMENT 1
+******************************************************************************************
+
+This assignment is coded using Python version 3.4.2
+This module starts with seed link "https://en.wikipedia.org/wiki/Hugh_of_Saint-Cher"
+
+In order to successfully run this code ,we need following libraries
+1) BS4 
+2) re
+3) urllib
+4) time
+
+the links to download the modules is as follows
+
+1) BS4 : https://pypi.python.org/pypi/beautifulsoup4/4.3.2
+2) re : https://pypi.python.org/pypi/re2/#downloads
+3) urllib : https://pypi.python.org/pypi/urllib3#downloads
+
+********************************************************************************************
+In order to install the python module , we need to use the following commands
+
+python <filename> install
+More information regarding installation can be found at https://docs.python.org/2/install/
+
+********************************************************************************************
+HOW TO  RUN THE PROGRAM
+------------------------
+to run the program use the command : python3.4 <filename>.py
+
+Once the program runs , we are asked for input 
+
+a) Do you want to enter key_phrase ?[y/n] : Answer 'y' (without quotes) if you want to enter a key phrase , else no . 
+                                            The code is written to handle case issues . i.e the code will run even if a 
+											user enters "Y" ,"Yes" . if the user wants to crawl without the keyword, then
+											user must enter 'n'(without quotes) . Again we can also enter "N" or "NO" as input
+											which will be considered as equivalent to 'n'
+
+b) Enter a Key Phrase : This question will be prompted if  the user has entered 'y' for the above question . This question requests 
+                        users to enter a key phrase . This code is built to handle different types of key_phrases . However if the user
+                        enters a blank(" ") , it will not be considered as a keyword and the program proceeds without a keyword
+
+Once the inputs are provided the crawling begins
+
+
+************************************************************************************************						
+This program was developed using following information on the internet
+
+a) https://www.youtube.com/watch?v=sZyAn2TW7GY
+b) https://www.youtube.com/watch?v=GEshegZzt3M
+
+The process of utilising beautiful soup module was learnt from the following link
+a)http://stackoverflow.com/questions/1936466/beautifulsoup-grab-visible-webpage-text
+b)https://www.youtube.com/channel/UCJbPGzawDH1njbqV-D5HqKw
+
+*************************************************************************************************
+
+RESULTS 
+---------
+for the focussed crawling , 47 links are retrieved when 1000 unique url's are crawled .
+The proportion is 47/1000 = 4.7% or 0.047
